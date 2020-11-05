@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta http-equiv="Content-Security-Policy" content="
+                default-src
+                    http://localhost:8000
+                    https://unpkg.com/
+                    http://*.openstreetmap.org/
+                    'self'
+                    'unsafe-inline'
+                                data:
+                                gap: https://ssl.gstatic.com;
+                style-src
+                    http://localhost:8000
+                    https://unpkg.com/
+                    http://*.openstreetmap.org/
+                    'self'
+                    'unsafe-inline';
+                script-src
+                    http://localhost:8000
+                    https://unpkg.com/
+                    http://*.openstreetmap.org/
+                    'self'
+                    'unsafe-eval';
+                media-src 
+                    http://localhost:8000
+                    https://unpkg.com/
+                    http://*.openstreetmap.org/;
+                img-src
+                    http://localhost:8000
+                    https://unpkg.com/
+                    http://*.openstreetmap.org/
+                    https:
+                    http:
+                    'self'
+                    data:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+				<!-- Load Leaflet from CDN-->
+				<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    	crossorigin=""/>
+
+
+			  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+        <link  rel="icon"   href="www/img/logo.png" type="image/png" />
+
+
+
+        <title>InemuriApp</title>
+    </head>
+    <body>
+        <div id="the_map">
+
+        </div>
+        <div id="ubi">
+            <p>Selecciona destino</p>
+        </div>
+        <div id="distancia"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+				
+				<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

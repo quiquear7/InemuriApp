@@ -1,0 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #the_map {
+  height: 95%;
+}
